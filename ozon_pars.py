@@ -22,6 +22,7 @@ print(len(results))
 count = 0
 
 for result in results:
+    link = result['src']
     link = link.replace("c250", "c1200")  # Получаем ссылку на фото большого размера (из карточки товара)
     print(link)
     img_data = requests.get(link)
